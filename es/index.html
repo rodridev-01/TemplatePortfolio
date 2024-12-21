@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rodridev</title>
+  <meta name="description" content="Bienvenido a mi sitio web">
+  <link rel="icon" href="/Booster.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <!-- ENCABEZADO -->
+  <header class="header" id="home">
+    <div class="logo-container">
+      <img class="logo" src="/icon.png" alt="Logo">
+      <span class="logo-text">rodridev</span>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+      </ul>
+      <select class="language-selector" id="languageSelector">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+      </select>
+      <button class="btn play-sound" onclick="window.open('mailto:rph26031994@gmail.com', '_blank')">Contacto</button>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <div class="side-menu" id="side-menu">
+    <ul>
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#">Acerca de</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="mailto:rph26031994@gmail.com">Contacto</a></li>
+    </ul>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <!-- SECCIÓN HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bienvenido a Mi Sitio Web</h1>
+      <p>Explora mi portafolio, descubre mis proyectos y aprende más sobre mis habilidades y experiencia.</p>
+      <button class="btn play-sound" onclick="window.open('mailto:rph26031994@gmail.com', '_blank')">Contacto</button>
+      <button class="btn play-sound"
+        onclick="window.open('https://drive.google.com/file/d/1sZfI2-5mSsPMg1uXJKfBwH-gFda5mrMs/view?usp=sharing', '_blank')">Currículum</button>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE PROYECTOS -->
+  <section class="projects" id="projects">
+    <h2>Proyectos</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <img src="/images/projects/bookstore.avif" alt="Litstring" class="project-image">
+        <h3>Litstring</h3>
+        <p>Tienda de libros para un proyecto de eCommerce.</p>
+        <div class="technologies">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js"></i>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rodridev-01/Bookstore-Ecomerce" target="_blank">
+            <i class="fab fa-github"></i> Código
+          </a>
+          <a href="https://litstring.netlify.app" target="_blank">
+            <i class="fas fa-external-link-alt"></i> Demo
+          </a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/images/projects/efsrt.avif" alt="Experiencias Formativas" class="project-image">
+        <h3>EFSRT</h3>
+        <p>Panel de control EFSRT para IESTP Jose Pardo.</p>
+        <div class="technologies">
+          <i class="fab fa-php"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js-square"></i>
+          <i class="fab fa-html5"></i>
+          <i class="fas fa-database"></i>
+          <i class="fab fa-figma"></i>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/Alonso-dev651/EFSRT" target="_blank">
+            <i class="fab fa-github"></i>Código
+          </a>
+          <a href="https://proyecto.live-ra.com" target="_blank">
+            <i class="fas fa-external-link-alt"></i> Demo
+          </a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/images/projects/crunchy.avif" alt="Crunchy.va" class="project-image">
+        <h3>Crunchy.va</h3>
+        <p>Plantilla de página sobre anime.</p>
+        <div class="technologies">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js"></i>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rodridev-01/Crunchy.va" target="_blank">
+            <i class="fab fa-github"></i> Código
+          </a>
+          <a href="https://animebebop.netlify.app" target="_blank">
+            <i class="fas fa-external-link-alt"></i> Demo
+          </a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/images/projects/softdata.avif" alt="Softdata Website" class="project-image">
+        <h3>Sitio Web de Softdata</h3>
+        <p>Desarrollo web para Softdata.</p>
+        <div class="technologies">
+          <i class="fas fa-rocket"></i>
+          <i class="fab fa-js"></i>
+          <i class="fab fa-node-js"></i>
+          <i class="fas fa-database"></i>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rodridev-01/SoftdataWebsite" target="_blank">
+            <i class="fab fa-github"></i> Código
+          </a>
+          <a href="https://sofdata.netlify.app" target="_blank">
+            <i class="fas fa-external-link-alt"></i> Demo
+          </a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/images/projects/portfolio.avif" alt="Softdata Website" class="project-image">
+        <h3>Portafolio</h3>
+        <p>Plantilla personalizable de portafolio.</p>
+        <div class="technologies">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js"></i>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rodridev-01/Porfolio" target="_blank">
+            <i class="fab fa-github"></i> Código
+          </a>
+          <a href="https://rodridev-01.github.io/Porfolio/" target="_blank">
+            <i class="fas fa-external-link-alt"></i> Demo
+          </a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="/images/projects/raccon's.avif" alt="Raccon's Adventure" class="project-image">
+        <h3>Raccon's Adventure</h3>
+        <p>Juego de plataformas sobre un mapache.</p>
+        <div class="technologies">
+          <i class="fab fa-unity"></i>
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rodridev-01/RaccoonsAdventureGame" target="_blank">
+            <i class="fab fa-github"></i> Código
+          </a>
+          <a href="/files/Raccoon's Adventure V1.01.exe" download>
+            <i class="fas fa-download"></i> Descargar
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightboxImage">
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="links">
+      <a href="#">Privacidad</a>
+      <a href="#">Términos</a>
+      <a href="mailto:rph26031994@gmail.com" target="_blank">Contacto</a>
+    </div>
+    <p>&copy; 2024 rodridev. Todos los derechos reservados.</p>
+  </footer>
+
+  <audio id="button-sound" src="/files/sound/click.mp3"></audio>
+  <script src="/script.js"></script>
+</body>
+
+</html>
