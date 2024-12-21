@@ -7,8 +7,8 @@
       --border-color: #1a1a1a;
       --accent-color: #cacaca;
       --shadow-color: #1a1a1a;
-      /* Sombra sutil para profundidad */
     }
+
 
     /* Scroll */
     html::-webkit-scrollbar {
@@ -91,7 +91,7 @@
       transition: transform 0.3s ease, color 0.3s ease;
     }
 
-    .logo-container a{
+    .logo-container a {
       color: var(--title-color);
     }
 
@@ -216,6 +216,10 @@
       .side-menu {
         width: 200px;
       }
+
+      .side-menu ul li a {
+        font-size: 14px;
+      }
     }
 
     @media (min-width: 769px) {
@@ -262,7 +266,7 @@
       position: relative;
       box-sizing: border-box;
       width: 60%;
-      margin: 0 auto;/
+      margin: 0 auto;
     }
 
     .hero-content {
@@ -294,20 +298,52 @@
       margin-right: 10px;
     }
 
-    .hero-image {
+    .hero-container {
       flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-image {
+      max-width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--border-color);
     }
 
     .hero-image img {
-      max-width: 80%;
+      max-width: 95%;
+      transform: rotate(5deg);
+      border-radius: 5px;
       height: auto;
     }
 
-    .header .btn {
-      font-size: 12px;
+    .hero-image img:hover {
+      transform: rotate(0deg);
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .logo-icon {
+      font-size: 24px;
+      color: var(--title-color);
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .logo-icon:hover {
+      color: var(--accent-color);
+      transform: scale(1.2);
     }
 
     .btn {
@@ -334,6 +370,15 @@
     @media (max-width: 768px) {
       .hero {
         width: 95%;
+        margin-bottom: 0px;
+      }
+
+      .hero-container {
+        margin-top: 30px;
+      }
+
+      .hero-image {
+        width: 90%;
       }
     }
 
@@ -443,13 +488,6 @@
       width: 100%;
       margin: 20px;
       position: relative;
-      filter: grayscale(1);
-    }
-
-    .project-card:hover {
-      border: 2px solid var(--shadow-color);
-      box-shadow: 4px 4px 0 var(--shadow-color);
-      filter: grayscale(0);
     }
 
     .project-card img {
@@ -457,6 +495,13 @@
       height: 200px;
       object-fit: cover;
       transition: filter 0.3s ease;
+      filter: grayscale(1);
+    }
+
+    .project-card:hover {
+      border: 2px solid var(--shadow-color);
+      box-shadow: 4px 4px 0 var(--shadow-color);
+      filter: grayscale(0);
     }
 
     .project-card h3 {
@@ -701,8 +746,6 @@
       right: 20px;
       width: 300px;
       height: 60px;
-      background-color: #1ED760;
-      border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -715,9 +758,7 @@
     .spotify-container.closed {
       width: 60px;
       height: 60px;
-      border-radius: 50%;
       justify-content: center;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     }
 
     /* Estilo del iframe cuando el menú está abierto */
@@ -729,18 +770,44 @@
       border-radius: 10px;
     }
 
-    /* Botón de apertura/cierre */
     .toggle-button {
       font-size: 30px;
-      background: none;
+      background: linear-gradient(145deg, #1db954, #1ed760);
       border: none;
+      padding: 10px 20px;
       cursor: pointer;
-      transition: transform 0.3s ease, color 0.3s ease;
+      color: #ffffff;
+      font-family: 'Press Start 2P', cursive;
+      text-transform: uppercase;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
     }
 
-    /* Efecto hover para el botón */
+
     .toggle-button:hover {
-      transform: scale(1.1);
+      background: linear-gradient(145deg, #1ed760, #1db954);
+    }
+
+    /* Efecto de foco */
+    .toggle-button:focus {
+      outline: none;
+      box-shadow: 0 0 10px #1db954;
+    }
+
+    /* Estilos responsivos */
+    @media (max-width: 768px) {
+      .toggle-button {
+        font-size: 35px;
+        padding: 8px 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .toggle-button {
+        font-size: 30px;
+        padding: 6px 12px;
+      }
     }
 
     @media (max-width: 768px) {

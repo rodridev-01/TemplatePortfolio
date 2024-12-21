@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rodridev</title>
-  <meta name="description" content="Bienvenido a mi sitio web">
-  <link rel="icon" href="/Booster.ico" type="image/x-icon">
+  <meta name="description" content="Este es mi portafolio. Prepárese para quedar levemente impresionado.">
+  <link rel="icon" href="/images/Booster.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
@@ -16,19 +16,18 @@
   <!-- ENCABEZADO -->
   <header class="header" id="home">
     <div class="logo-container">
-      <img class="logo" src="/icon.png" alt="Logo">
       <span class="logo-text">rodridev</span>
-    </div>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-      </ul>
       <select class="language-selector" id="languageSelector">
         <option value="es">ES</option>
         <option value="en">EN</option>
       </select>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#experience">experiencia</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+      </ul>
       <button class="btn play-sound" onclick="window.open('mailto:rph26031994@gmail.com', '_blank')">Contacto</button>
     </nav>
     <div class="menu-toggle" id="menu-toggle">
@@ -38,8 +37,8 @@
 
   <div class="side-menu" id="side-menu">
     <ul>
-      <li><a href="#home">Inicio</a></li>
-      <li><a href="#">Acerca de</a></li>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#experience">Experiencia</a></li>
       <li><a href="#projects">Proyectos</a></li>
       <li><a href="mailto:rph26031994@gmail.com">Contacto</a></li>
     </ul>
@@ -48,15 +47,66 @@
   <div class="overlay" id="overlay"></div>
 
   <!-- SECCIÓN HERO -->
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="hero-content">
-      <h1>Bienvenido a Mi Sitio Web</h1>
-      <p>Explora mi portafolio, descubre mis proyectos y aprende más sobre mis habilidades y experiencia.</p>
-      <button class="btn play-sound" onclick="window.open('mailto:rph26031994@gmail.com', '_blank')">Contacto</button>
-      <button class="btn play-sound"
-        onclick="window.open('https://drive.google.com/file/d/1sZfI2-5mSsPMg1uXJKfBwH-gFda5mrMs/view?usp=sharing', '_blank')">Currículum</button>
+      <h1>Hola.</h1>
+      <h1>Soy Rodrigo.</h1>
+      <p>Soy técnico en Computación e Informática, apasionado por el desarrollo web y de escritorio.</p>
+      <div class="hero-buttons">
+        <button class="btn play-sound" onclick="window.open('mailto:rph26031994@gmail.com', '_blank')">Contacto</button>
+        <button class="btn play-sound"
+          onclick="window.open('https://drive.google.com/file/d/1sZfI2-5mSsPMg1uXJKfBwH-gFda5mrMs/view?usp=sharing', '_blank')">Curriculum</button>
+      </div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-image">
+        <img src="/images/Me.jpg" alt="Me">
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/rodridev-01" target="_blank">
+          <i class="fab fa-github logo-icon"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rodridev26" target="_blank">
+          <i class="fab fa-linkedin logo-icon"></i>
+        </a>
+        <a href="https://www.instagram.com/rodrigou.py" target="_blank">
+          <i class="fab fa-instagram logo-icon"></i>
+        </a>
+      </div>
     </div>
   </section>
+
+  <!-- SECCIÓN DE EXPERIENCIA -->
+  <section class="experience" id="experience">
+    <h2>Experiencia</h2>
+    <div class="timeline">
+      <div class="job">
+        <div class="job-dot"></div>
+        <div class="job-content">
+          <h3>Desarrollador de Software</h3>
+          <p><strong>MUNICIPALIDAD DISTRITAL DE SALAS</strong></p>
+          <p>
+            Desarrollé un sistema basado en SQL para generar recibos de impuestos prediales,
+            personalizados según el contribuyente, con opciones para impresión individual o masiva,
+            consolidando los datos en un solo archivo.
+          </p>
+        </div>
+      </div>
+      <div class="job">
+        <div class="job-dot"></div>
+        <div class="job-content">
+          <h3>Diseñador Frontend</h3>
+          <p><strong>IESTP JOSE PARDO</strong></p>
+          <p>
+            Colaboré en el diseño de un sitio web para el Sistema de Gestión EFSRT,
+            creando una experiencia intuitiva que facilita la organización y seguimiento de actividades de formación,
+            así como simplificando los procesos de certificación.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- SECCIÓN DE PROYECTOS -->
   <section class="projects" id="projects">
@@ -182,6 +232,18 @@
     <img class="lightbox-content" id="lightboxImage">
   </div>
 
+    <!-- Contenedor del reproductor de Spotify -->
+    <div class="spotify-container closed" id="spotify-player">
+      <button class="toggle-button" id="toggle-button"><i class="fa-brands fa-spotify"></i></button>
+      <!-- Icono de nota musical -->
+      <div id="player" style="display: none;">
+        <iframe title="Spotify Embed: Canción"
+          src="https://open.spotify.com/embed/track/3t84sDh2rO5GplkWsmKqoc?si=31e8ef889f4e4137" width="100%" height="100%"
+          style="min-height: 200px;" frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
+      </div>
+    </div>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -190,7 +252,7 @@
       <a href="#">Términos</a>
       <a href="mailto:rph26031994@gmail.com" target="_blank">Contacto</a>
     </div>
-    <p>&copy; 2024 rodridev. Todos los derechos reservados.</p>
+    <p>&copy; 2024 rodridev. Casi todos los derechos reservados.</p>
   </footer>
 
   <audio id="button-sound" src="/files/sound/click.mp3"></audio>
