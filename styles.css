@@ -155,11 +155,13 @@
       left: -250px;
       height: 100%;
       width: 250px;
-      background-color: var(--bg-color);
+      background: url(images/sidebar.jpg) no-repeat center center;
+      background-size: cover;
       padding: 25px;
       transition: left 0.3s ease;
       z-index: 1001;
     }
+
 
     .side-menu ul {
       list-style: none;
